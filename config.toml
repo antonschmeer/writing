@@ -1,0 +1,17 @@
+baseurl = "https://dt801ts.github.io/"
+relativeURLs = true 
+languageCode = "en-us"
+title = "Anton Schmeer"
+theme = "custom"
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[[menu.main]]
+    name = "Collection 1"
+    identifier = "collection-1"
+    weight = -110
+[[menu.main]]
+    name = "Collection 2"
+    identifier = "collection-2"
+    weight = -100

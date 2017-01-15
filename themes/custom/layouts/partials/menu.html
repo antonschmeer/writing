@@ -1,0 +1,27 @@
+<!--main menu start-->
+<div id="main-menu" class="nav">
+    <!-- menu menu start-->
+    <ul class="main-menu-menu">
+      {{ $currentNode := . }}
+      {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+
+        <li class="sub-menu{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
+            <h2>{{ .Name }}</h2>
+            <ul class="sub{{if $currentNode.HasMenuCurrent "main" . }} open{{end}}">
+                {{ range .Children }}
+                <li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}"><h3>{{ .Name }}</h3></a> </li>
+                {{ end }}
+            </ul>
+          {{else}}
+            <li>
+            <a class="" href="{{.URL}}">
+                <h3>{{ .Name }}</h3>
+            </a>
+          {{end}}
+          </li>
+      {{end}}
+    </ul>
+    <!-- menu menu end-->
+</div>
+<!--main menu end-->
