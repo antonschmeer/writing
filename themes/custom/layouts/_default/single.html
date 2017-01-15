@@ -8,9 +8,9 @@
   <!-- <p class="small gray"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time></p> -->
 </article>
 
-{{if .NextInSection}}<a class="prev-arrow" href="{{.NextInSection}}"><i class="fa fa-angle-double-left" aria-hidden="true"></i> <span class="nav-title nav-title-next">{{ .NextInSection.Title }}</span></a>{{end}}
+{{if .NextInSection}}<a class="prev-arrow" href="{{.NextInSection.RelPermalink}}"><i class="fa fa-angle-double-left" aria-hidden="true"></i> <span class="nav-title nav-title-next">{{ .NextInSection.Title }}</span></a>{{end}}
 
-{{if .PrevInSection}}<a class="next-arrow" href="{{.PrevInSection}}"><span class="nav-title nav-title-prev">{{ .PrevInSection.Title }}</span> <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>{{end}}
+{{if .PrevInSection}}<a class="next-arrow" href="{{.PrevInSection.RelPermalink}}"><span class="nav-title nav-title-prev">{{ .PrevInSection.Title }}</span> <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>{{end}}
 
 </main>
 {{ partial "foot.html" . }}
