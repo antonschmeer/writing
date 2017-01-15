@@ -1,4 +1,4 @@
-baseurl = "https://antonschmeer.github.io/writing/"
+baseurl = "https://antonschmeer.github.io/"
 relativeURLs = true 
 languageCode = "en-us"
 title = "Anton Schmeer"
