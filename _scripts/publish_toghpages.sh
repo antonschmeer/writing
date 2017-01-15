@@ -33,11 +33,3 @@ git push origin master
 
 echo "deploying gh-pages to github"
 git push origin gh-pages
-
-cd ~/Dropbox/Developer/Writing/
-
-git add .
-
-git commit -m "s"
-
-git push origin master

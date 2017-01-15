@@ -1,11 +1,11 @@
 ---
 lastmod: 2015-12-23
 date: 2014-03-06
-linktitle: Posthumous and the Gulliver Tr. Co.
+linktitle: flkasjdflkajsd
 menu:
   main:
     parent: collection-2
-title: Posthumous and the Gulliver Tr. Co.
+title: flkdjalkfjd
 next: /Collection-2/Article-2
 prev: /Collection-2/Article-0
 weight: 150

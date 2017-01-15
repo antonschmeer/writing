@@ -5,18 +5,13 @@ linktitle: Article 4
 menu:
   main:
     parent: collection-2
-title: Church Going
+title: oiruwoeraln
 next: /Collection-2/Article-2
 prev: /Collection-2/Article-1
 weight: 50
 ---
 
-<span class="big-letter">T</span>o be or not to be, <br>
-That is the question <br>
-Whether tis nobler in the mind <br>
-To suffer the slings and arrows of outrageous fortune <br>
-Or to take arms against a sea of troubles <br>
-And by opposing, end them <br>
+<span class="big-letter">T</span>fasdjflaksdjlfj
 
 ## Testing
 
