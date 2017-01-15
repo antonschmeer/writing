@@ -33,3 +33,11 @@ git push origin master
 
 echo "deploying gh-pages to github"
 git push origin gh-pages
+
+cd ..
+
+git add .
+
+git commit -m "s"
+
+git push origin master
