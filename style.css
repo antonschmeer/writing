@@ -721,6 +721,13 @@ footer p,
   font-size: 1.2em;
   line-height: 1.6em;
 }
+
+@media screen and (max-width: 414px) {
+  .fa-angle-double-left, .fa-angle-double-right {
+    font-size: 1.4em;
+  }
+}
+
 .next-arrow {float: right;}
 
 .nav-title {
