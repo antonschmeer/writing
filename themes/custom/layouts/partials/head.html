@@ -26,10 +26,11 @@
   <link rel="stylesheet" type="text/css" href="/font-awesome/font-awesome.min.css">
   
   <!-- CSS Style -->
+  <link rel="stylesheet" href="/smooth-scrollbar.css" />
   <link rel="stylesheet" href="/style.css" />
-  {{ if isset .Site.Params "customCSS" }}
+  <!-- {{ if isset .Site.Params "customCSS" }}
   <link href='{{ .Site.BaseURL }}{{ .Site.Params.customCSS }}' rel='stylesheet' type='text/css'>
-  {{ end }}
+  {{ end }} -->
 
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -100,7 +101,7 @@
   </header>
   {{ end }}
 
-  <div class="full-wrapper">
+  <div class="full-wrapper" id="full-wrapper">
 
     {{ if or (isset .Site.Params "headerGraphic") (isset .Site.Params "headerHTML") }}
     <div class="header center">
