@@ -22,7 +22,6 @@
 		$('#front-big-word h1').empty();
 	});
 
-
 	// Just a quick function to let you 
 	// manage the order of operations
 	function init(){
@@ -131,6 +130,35 @@
 	$(function() {
 	    FastClick.attach(document.body);
 	});
+
+	var setScrollbar = function(){
+		//smooth-scrollbar
+			scrollbar = Scrollbar.init(document.getElementById('full-wrapper'), {
+			speed: 1.0,
+			damping: 0.1,
+			overscrollDamping: 0.2,
+			thumbMinSize: 20,
+			renderByPixels: true,
+			alwaysShowTracks: false,
+			continuousScrolling: 'auto',
+			overscrollEffect: 'bounce',
+			overscrollEffectColor: '#000'
+		});
+	}
+
+	if($(window).width() >= 1025){
+		setScrollbar();		
+	}
+
+
+	window.onresize = function(event) {
+	    if($(window).width() < 1025 && Scrollbar.has(document.getElementById('full-wrapper'))){
+	    	scrollbar.destroy();
+	    }
+	    if($(window).width() >= 1025 && !(Scrollbar.has(document.getElementById('full-wrapper')))){
+	    	setScrollbar();
+	    }
+	};
 
 	init();
 	
