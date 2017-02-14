@@ -149,11 +149,17 @@
 	if($(window).width() >= 1025){
 		setScrollbar();		
 	}
+	else{
+		$('.full-wrapper').css('overflow-y', 'scroll');
+		$('.full-wrapper').css('-webkit-overflow-scrolling', 'touch');
+	}
 
 
 	window.onresize = function(event) {
 	    if($(window).width() < 1025 && Scrollbar.has(document.getElementById('full-wrapper'))){
 	    	scrollbar.destroy();
+	    	$('.full-wrapper').css('overflow-y', 'scroll');
+	    	$('.full-wrapper').css('-webkit-overflow-scrolling', 'touch');
 	    }
 	    if($(window).width() >= 1025 && !(Scrollbar.has(document.getElementById('full-wrapper')))){
 	    	setScrollbar();
