@@ -76,7 +76,7 @@ body {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto; 
-  /*-webkit-font-smoothing: antialiased;*/
+  -webkit-font-smoothing: antialiased;
   /*-webkit-font-smoothing: subpixel-antialiased;*/
 }
 
@@ -86,7 +86,6 @@ body {
   box-sizing: border-box;
   position: fixed;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 
 .landing-image {
@@ -117,15 +116,16 @@ h1.italic, h2.italic{
 }
 
 article {
+  height: 100%;
   padding-bottom: 2em;
   border-bottom: 1px dotted #e0e1e6;
 }
 
 article h3 {
   font-family: 'GaramondPremrPro-MedItDisp';
-  margin-bottom: 6px;
+  margin-bottom: 0px;
   font-size: 2em;
-  -webkit-font-smoothing: subpixel-antialiased;
+  /*-webkit-font-smoothing: subpixel-antialiased;*/
 }
 
 article p {
@@ -237,6 +237,7 @@ p, .p {
 
 .canela {
   font-family: 'Canela Italic', 'GaramondPremrPro', Georgia, Times, 'Times New Roman', serif;
+
 }
 
 .nav-up {
@@ -629,7 +630,7 @@ h1 a { color: #333;}
 
 #front-big-word {
   position: fixed;
-  bottom: 0;
+  bottom: 30px;
   width: 100%;
   height: 400px;
   left: 0;
