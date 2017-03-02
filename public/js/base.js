@@ -51,6 +51,8 @@
 			}
 			winTop = $(window).scrollTop();
 
+			$('.top-link').css({'visibility':'hidden', 'pointer-events':'none'});
+
 			/*// Lock scroll 
 			$cMenu.bind('touchstart scroll mousewheel touchmove', function (ev) {
 				if ($(this).scrollTop() === 0) $(this).scrollTop(1);
@@ -71,6 +73,8 @@
 		
 			// Unlock scroll 
 			$cMenu.unbind('touchstart scroll mousewheel touchmove');
+
+			$('.top-link').css({'visibility':'visible', 'pointer-events':'auto'});
 		});
 		
 		// escape to close overlay
@@ -82,6 +86,8 @@
 				$cMenu.fadeOut(500,"linear");
 				$menuParent.removeClass("takeaseat");
 			} 
+
+			$('.top-link').css({'visibility':'visible', 'pointer-events':'auto'});
 		});
 	};
 
@@ -131,9 +137,9 @@
 	    FastClick.attach(document.body);
 	});
 
+	//smooth-scrollbar
 	var setScrollbar = function(){
-		//smooth-scrollbar
-			scrollbar = Scrollbar.init(document.getElementById('full-wrapper'), {
+		scrollbar = Scrollbar.init(document.getElementById('full-wrapper'), {
 			speed: 1.0,
 			damping: 0.1,
 			overscrollDamping: 0.2,
@@ -144,7 +150,7 @@
 			overscrollEffect: 'bounce',
 			overscrollEffectColor: '#000'
 		});
-	}
+	};
 
 	if($(window).width() >= 1025){
 		setScrollbar();		
