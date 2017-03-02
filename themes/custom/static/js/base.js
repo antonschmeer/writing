@@ -51,7 +51,9 @@
 			}
 			winTop = $(window).scrollTop();
 
-			$('.top-link').css({'visibility':'hidden', 'pointer-events':'none'});
+			if($(window).width() > 768){
+				$('.top-link').css({'visibility':'hidden', 'pointer-events':'none'});				
+			}
 
 			/*// Lock scroll 
 			$cMenu.bind('touchstart scroll mousewheel touchmove', function (ev) {
@@ -65,6 +67,7 @@
 				ev.stopPropagation();
 			});*/
 		});
+		
 		$closeLink.click(function(e){
 			e.preventDefault();
 			if ( mobileView ) { $(window).scrollTop(winTop) };
@@ -72,7 +75,7 @@
 			$menuParent.removeClass("takeaseat");
 		
 			// Unlock scroll 
-			$cMenu.unbind('touchstart scroll mousewheel touchmove');
+			// $cMenu.unbind('touchstart scroll mousewheel touchmove');
 
 			$('.top-link').css({'visibility':'visible', 'pointer-events':'auto'});
 		});
