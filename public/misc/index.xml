@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Miscs on Anton Schmeer</title>
+    <link>https://antonschmeer.github.io/misc/index.xml</link>
+    <description>Recent content in Miscs on Anton Schmeer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Mar 2017 17:16:53 -0600</lastBuildDate>
+    <atom:link href="https://antonschmeer.github.io/misc/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Untitled</title>
+      <link>https://antonschmeer.github.io/misc/Untitled/</link>
+      <pubDate>Mon, 13 Mar 2017 17:16:53 -0600</pubDate>
+      
+      <guid>https://antonschmeer.github.io/misc/Untitled/</guid>
+      <description>&lt;p&gt;Aslkdjflkajskldjflajslkdjlfjalksjfj&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

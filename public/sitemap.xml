@@ -22,6 +22,11 @@
   </url>
   
   <url>
+    <loc>https://antonschmeer.github.io/misc/Untitled/</loc>
+    <lastmod>2017-03-13T17:16:53-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://antonschmeer.github.io/collection-2/Article-0/</loc>
     <lastmod>2015-12-23T00:00:00+00:00</lastmod>
   </url>
@@ -46,6 +51,12 @@
   <url>
     <loc>https://antonschmeer.github.io/collection-2/</loc>
     <lastmod>2015-12-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://antonschmeer.github.io/misc/</loc>
+    <lastmod>2017-03-13T17:16:53-06:00</lastmod>
     <priority>0</priority>
   </url>
   
