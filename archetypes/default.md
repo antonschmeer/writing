@@ -4,7 +4,7 @@ menu:
   main:
     parent: Misc
 title: Untitled
-next: /Misc/prev-article
+next: /Misc/next-article
 prev: /Misc/prev-article
 weight: 0
 draft: true
