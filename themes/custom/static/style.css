@@ -141,6 +141,10 @@ article h3 {
   /*-webkit-font-smoothing: subpixel-antialiased;*/
 }
 
+.spread {
+  letter-spacing: .15em;
+}
+
 article p {
   -webkit-font-smoothing: antialiased;
 }
