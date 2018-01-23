@@ -251,6 +251,9 @@ p, .p {
     font-size: 6.5em;
     padding-right: 0px;
   }
+  .spread {
+    font-size: .9em;
+  }
 }
 
 
