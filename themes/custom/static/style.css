@@ -202,6 +202,7 @@ p, .p {
   float: left;
   margin-right: 0.07em;
   margin-bottom: -0.3em;
+  color: rgba(170, 0, 0, 1.00);
 }
 
 .big-letter-taller {
@@ -212,6 +213,14 @@ p, .p {
   float: left;
   margin-right: 0.07em;
   margin-bottom: -0.1em;
+}
+
+.dark-candy-red {
+  color: rgba(170, 0, 0, 1.00);
+}
+
+.light-candy-red {
+  color: #e23737;
 }
 
 @media screen and (max-width: 768px){
