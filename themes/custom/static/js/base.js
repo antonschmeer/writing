@@ -22,6 +22,10 @@
 		$('#front-big-word h1').empty();
 	});
 
+	$('#main-menu-front .big-title').on('click', function(){
+		window.location.href = "https://antonschmeer.github.io/writing";
+	})
+
 	// Just a quick function to let you 
 	// manage the order of operations
 	function init(){
@@ -39,12 +43,14 @@
 		$menuParent = $($cMenu.parent()),
 		$openLinks  = $("#navigate, #menu a"),
 		$closeLink  = $("#overthetop a.close"),
+		$articleCloseLink = $('header#cover p a.close'),
 		mobileView,
 		winTop;
 		$openLinks.click(function(e){
 			e.preventDefault();
 			$cMenu.fadeToggle(500,"linear");
 			$menuParent.toggleClass("takeaseat");
+			$articleCloseLink.toggleClass("unclickable");
 			mobileView = isMobile();
 			if ( mobileView ) {
 				$cMenu.addClass("ultra");
@@ -53,7 +59,7 @@
 
 			if($(window).width() > 768){
 				$('.top-link').css({'visibility':'hidden', 'pointer-events':'none'});				
-			}
+			}		
 
 			/*// Lock scroll 
 			$cMenu.bind('touchstart scroll mousewheel touchmove', function (ev) {
@@ -73,6 +79,7 @@
 			if ( mobileView ) { $(window).scrollTop(winTop) };
 			$cMenu.fadeToggle(250,"linear");
 			$menuParent.removeClass("takeaseat");
+			$articleCloseLink.removeClass("unclickable");
 		
 			// Unlock scroll 
 			// $cMenu.unbind('touchstart scroll mousewheel touchmove');
@@ -88,6 +95,7 @@
 			if (e.keyCode == 27) { 
 				$cMenu.fadeOut(500,"linear");
 				$menuParent.removeClass("takeaseat");
+				$articleCloseLink.removeClass("unclickable");
 			} 
 
 			$('.top-link').css({'visibility':'visible', 'pointer-events':'auto'});
@@ -156,7 +164,7 @@
 	};
 
 	if($(window).width() >= 1025){
-		setScrollbar();		
+		setScrollbar();	
 	}
 	else{
 		$('.full-wrapper').css({'overflow-y':'scroll', '-webkit-overflow-scrolling':'touch', 'overflow-x':'hidden'});
