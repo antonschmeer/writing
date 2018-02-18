@@ -667,7 +667,7 @@ h1 a { color: #333;}
   padding-left: 0.05em;
   padding-bottom: 0.1em;
   padding-right: 0.1em;
-  margin-bottom: -32px; /*fixes Firefox line spacing*/
+  margin-bottom: -32px; /* fixes Firefox line spacing */
 }
 
 #main-menu-front .big-title:hover {
