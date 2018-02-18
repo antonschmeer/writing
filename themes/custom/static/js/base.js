@@ -22,9 +22,9 @@
 		$('#front-big-word h1').empty();
 	});
 
-	$('#main-menu-front .big-title').on('click', function(){
-		window.location.href = "https://antonschmeer.github.io/writing";
-	})
+	// $('#main-menu-front .big-title').on('click', function(){
+	// 	window.location.href = "https://antonschmeer.github.io/writing";
+	// });
 
 	// Just a quick function to let you 
 	// manage the order of operations
