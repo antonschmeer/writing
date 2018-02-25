@@ -1,11 +1,11 @@
 ---
 lastmod: 2015-12-23
 date: 2014-03-06
-linktitle: flkasjdflkajsd
+linktitle: Richard III Comes to Breakfast
 menu:
   main:
     parent: collection-2
-title: flkdjalkfjd
+title: Richard III
 next: /Collection-2/Article-2
 prev: /Collection-2/Article-0
 weight: 150
