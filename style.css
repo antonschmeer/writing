@@ -123,7 +123,7 @@ h2 {
 }
 
 h2.article-title {
-  margin-top: 10vh;
+  margin-top: 12vh;
   margin-bottom: 10px;
 }
 
@@ -138,6 +138,7 @@ article {
 
 article.post {
   border-bottom: 1px dotted #e0e1e6;
+  opacity: 0;
 }
 
 article h3 {
