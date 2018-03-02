@@ -679,6 +679,7 @@ h1 a { color: #333;}
   -o-filter: blur(1px);
   -ms-filter: blur(1px);
   filter: blur(1px);
+  background-image: url('../images/Untitled-1.jpg');
 }
 
 #main-menu-front ul {
