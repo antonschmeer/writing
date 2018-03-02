@@ -13,7 +13,7 @@
 
 	var isMobile = function(){ return $(window).width() < 900 };
 
-	// front page big letters on link hover with movement
+	// front page big letters on link hover WITHOUT MOVEMENT
 	$('#main-menu-front h3').on('mouseenter', function(){
 		$('#front-big-word h1').text($(this).text());
 	});
@@ -21,13 +21,13 @@
 		$('#front-big-word h1').empty();
 	});
 
-	// front page big letters on link hover with movement
+	// front page big letters on link hover WITH MOVEMENT
 	// $('#main-menu-front h3').on('mouseenter', function(){
 	// 	$('#front-big-word h1').text($(this).text());
 	// 	var ls = -80;
 	// 	setInterval(function(){
 	// 		$('#front-big-word h1').css('letter-spacing', (ls + 'px'));
-	// 		ls = ls + -.01;
+	// 		ls = ls + -.002;
 	// 	}, 0)
 	// });
 	// $('#main-menu-front h3').on('mouseleave', function(){
@@ -35,9 +35,35 @@
 	// 	$('#front-big-word h1').empty();
 	// });
 
-	// $('#main-menu-front .big-title').on('click', function(){
-	// 	window.location.href = "https://antonschmeer.github.io/writing";
-	// });
+	$("#main-menu-front .big-title").hover(
+
+		function () {
+		    setTimeout(function(){
+		    	$('.background-image-wrapper').animate({
+		    		opacity: 1
+		    	}, 400);
+		    	$('#main-menu-front h3, #main-menu-front h2.menu-collection-title').animate({
+			    	opacity: 0
+			    }, 10);
+		    }, 100);
+		},
+
+		function () {
+		    $('.background-image-wrapper').animate({
+		    	opacity: 0
+		    }, 100)
+		    $('#main-menu-front h3, #main-menu-front h2.menu-collection-title').animate({
+		    	opacity: 1
+		    }, 100);
+		}	
+	);
+
+	$('#main-menu-front h3, #main-menu-front h2.menu-collection-title').on('mouseenter', function(){
+		$('.background-image-wrapper').animate({
+			opacity: 0
+		}, 100)
+		$('#main-menu-front h3, #main-menu-front h2.menu-collection-title').css('opacity', '1');
+	});
 
 	// Just a quick function to let you 
 	// manage the order of operations
