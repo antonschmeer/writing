@@ -193,6 +193,9 @@
 	    }
 	};
 
+	$('article.post').animate({'opacity':'1'}, 300);
+	$('h2.article-title').animate({'margin-top':'10vh'}, 300);
+
 	init();
 	
 }(jQuery, this, document));
