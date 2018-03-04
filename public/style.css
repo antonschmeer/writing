@@ -374,7 +374,13 @@ header#cover p a.close:after {
   -ms-transform-origin: bottom left;
   -webkit-transform-origin: bottom left;
   transform-origin: bottom left;
+}
+
+@media screen and (max-width: 900px) {
+  .single-article-close {
+    display: none;
   }
+}
 
 .unclickable {
   pointer-events: none;
