@@ -35,43 +35,43 @@
 	// 	$('#front-big-word h1').empty();
 	// });
 
-	var has_left_title_area = false;
+	// var has_left_title_area = false;
 
-	$('#main-menu-front h3, #main-menu-front h2.menu-collection-title').on('mouseenter', function(){
-		has_left_title_area = true;
-	});
+	// $('#main-menu-front h3, #main-menu-front h2.menu-collection-title').on('mouseenter', function(){
+	// 	has_left_title_area = true;
+	// });
 
-	$("#main-menu-front .big-title").hover(
+	// $("#main-menu-front .big-title").hover(
 
-		function () {
-			if( has_left_title_area ){
-			    setTimeout(function(){
-			    	$('.background-image-wrapper').animate({
-			    		opacity: 1
-			    	}, 400);
-			    	$('#main-menu-front h3, #main-menu-front h2.menu-collection-title').animate({
-				    	opacity: 0
-				    }, 10);
-			    }, 100);
-			}
-		},
+	// 	function () {
+	// 		if( has_left_title_area ){
+	// 		    setTimeout(function(){
+	// 		    	$('.background-image-wrapper').animate({
+	// 		    		opacity: 1
+	// 		    	}, 400);
+	// 		    	$('#main-menu-front h3, #main-menu-front h2.menu-collection-title').animate({
+	// 			    	opacity: 0
+	// 			    }, 10);
+	// 		    }, 100);
+	// 		}
+	// 	},
 
-		function () {
-		    $('.background-image-wrapper').animate({
-		    	opacity: 0
-		    }, 100)
-		    $('#main-menu-front h3, #main-menu-front h2.menu-collection-title').animate({
-		    	opacity: 1
-		    }, 100);
-		}	
-	);
+	// 	function () {
+	// 	    $('.background-image-wrapper').animate({
+	// 	    	opacity: 0
+	// 	    }, 100)
+	// 	    $('#main-menu-front h3, #main-menu-front h2.menu-collection-title').animate({
+	// 	    	opacity: 1
+	// 	    }, 100);
+	// 	}	
+	// );
 
-	$('#main-menu-front h3, #main-menu-front h2.menu-collection-title').on('mouseenter', function(){
-		$('.background-image-wrapper').animate({
-			opacity: 0
-		}, 100)
-		$('#main-menu-front h3, #main-menu-front h2.menu-collection-title').css('opacity', '1');
-	});
+	// $('#main-menu-front h3, #main-menu-front h2.menu-collection-title').on('mouseenter', function(){
+	// 	$('.background-image-wrapper').animate({
+	// 		opacity: 0
+	// 	}, 100)
+	// 	$('#main-menu-front h3, #main-menu-front h2.menu-collection-title').css('opacity', '1');
+	// });
 
 	// Just a quick function to let you 
 	// manage the order of operations
