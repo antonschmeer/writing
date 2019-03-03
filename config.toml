@@ -1,7 +1,7 @@
 baseurl = "https://antonschmeer.github.io/"
 relativeURLs = true 
 languageCode = "en-us"
-title = "Gereon Huys"
+title = "Prénom Surname"
 theme = "custom"
 [taxonomies]
 tag = "tags"
